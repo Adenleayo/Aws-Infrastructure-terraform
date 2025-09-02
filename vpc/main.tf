@@ -29,7 +29,7 @@ resource "aws_vpc" "main" {
   }
 }
 
-# this data source is used to get the availability zones in the region
+# this data source is used to get the availability zones in the region (e.g. us-east-1a, us-east-1b, us-east-1c)
 data "aws_availability_zones" "available" {}
 
 
