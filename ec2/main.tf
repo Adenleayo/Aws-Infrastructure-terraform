@@ -91,6 +91,8 @@ resource "aws_s3_object" "private_key_s3" {
     create_before_destroy = true
   }
 
+  depends_on = [local_file.rsa_private,aws_key_pair.instance-key]
+
 
 }
 locals {
