@@ -1,14 +1,14 @@
 # Terraform working directories
 ec2/.terraform/
 vpc/.terraform/
-kubernetes/.terraform/
+k8s-project/.terraform/
 
 # Terraform state files
 ec2/*.tfstate
 ec2/*.tfstate.backup
 vpc/*.tfstate
 vpc/*.tfstate.backup
-kubernetes/*.tfstate
+k8s-project/*.tfstate
 
 #recusive
 **/*.tfstate 
@@ -20,8 +20,12 @@ ec2/public-key.pem
 .env
 
 #Keys / credentials
-kubernetes/*.kubeconfig
-kubernetes/*.kubeconfig.backup
-kubernetes/.kube/
-kubernetes/*.pem
+k8s-project/*.kubeconfig
+k8s-project/*.kubeconfig.backup
+k8s-project/.kube/
+k8s-project/*.pem
 
+k8s-project/*.log
+k8s-project/*.tfvars
+k8s-project/tfplan
+#k8s-project/*.tfplan
